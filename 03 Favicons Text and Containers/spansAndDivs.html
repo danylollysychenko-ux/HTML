@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>spans and divs</title>
+    </head>
+    <body>
+        <h1>what are &lt;spans&gt; and &lt;div&gt;s?</h1>
+        <h2>&lt;span&gt; - Inline container</h2>
+        <ul>
+            <li>
+                The span tag is an <strong>inline container</strong>
+            </li>
+            <li>
+                groups a part of text or other inline element without breaking document flow
+            </li>
+            <li>
+                Mostly used to apply styles like colors and fonts inside text elements
+            </li>
+        </ul>
+        <h3>Example</h3>
+        <p>
+            This paragraph contains a span to <span style="color:blue; font-size: 3em;">color this text</span>
+            ,but not this text. Notice the change was inline and did not start on
+            a line or add one after
+        </p>
+        <h2>&lt;div&gt; - Block Container</h2>
+        <ul>
+            <li>The div tag is a <strong>block-level container</strong></li>
+            <li>It is used to group larger sections of html content</li>
+            <li>
+                It creates a block that takes up the full width of its parent 
+                container, pushing content before and after to new lines.
+            </li>
+            <li>Often used to divide a page into sections or containers</li>
+        </ul>
+        <h3>Example</h3>
+        <p>
+            <em><strong>Note: </strong></em>To demo block level behavior, we are 
+            using a bad practice of putting a div inside a paragraph
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <div style="background-color:yellow">Hello I am a div</div>
+           Omnis quam nam recusandae incidunt odio alias neque expedita minus, 
+           maxime porro.
+        </p>
+    </body>
+</html>
