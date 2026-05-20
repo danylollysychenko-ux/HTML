@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        /* This is CSS*/
+        /* This is a CSS comment*/
+        /*This rule targets tables, th, and td elements*/
+        table, th, td{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid darkgrey;
+        }
+        /*This rule is only for tables*/
+        table{
+            border-collapse: collapse;
+        }
+
+        /* This rule is for th and td elements*/
+        th, td{
+            padding: 5px;
+            text-align: center;
+        }
+        thead{
+            background-color: lightgray;
+        }
+        tbody{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>This page is about tables</h1>
+    <ul>
+        <li>
+            <a href="./buttons.html">Buttons</a>
+        </li>
+    </ul>
+    <table > <!---All tables start with the table tag-->
+        <thead>
+            <!--Added for semantic value-->
+            <tr> <!--all tables need table row (tr)-->
+                <th>Sunday</th> <!--inside a table row, usually the first row is header row - use th for each row-->
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Winter</td>
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Spring</td>
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Summer</td>
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Fall</td>
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

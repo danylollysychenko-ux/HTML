@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms are one of the most important parts of an webpage</h1>
+    <p>A form is a section of a webpage that collects user input.</p>
+    <p>
+      The &quot;action&quot; attribute of the form tag says where the data
+      should be sent
+    </p>
+    <p>
+      The &quot;method&quot; attribute of the form tag is used to indicate how
+      the data is sent (GET and POST are most common, but there is also PUT,
+      PATCH and GET)
+    </p>
+    <ul>
+      <li>
+        GET: Sends values through the url - not very secure, but that's not
+        always critical
+        <ul>
+          <li>Used for RETRIEVING data</li>
+          <li>This should never change the state of something on a server</li>
+        </ul>
+      </li>
+      <li>
+        POST: Sends data to create a new resource
+        <ul>
+          <li>
+            Does not send data in the url. Sends as a seperate payload in the
+            request
+          </li>
+        </ul>
+      </li>
+      <li>PUT: Replaces an entire resource</li>
+      <li>PATCH: Updates a part of a resource/record</li>
+      <li>DELETE: Deletes a resource</li>
+    </ul>
+    <p>
+      All form elements passed to another endpoint should have NAME attributes
+    </p>
+    <div>
+      <form action="https://webhook.site/#!/view/a325cd0d-ada2-41c7-bbb8-4db2d26eb9a7" method="GET">
+        <div>
+          <label for="username">Username: </label>
+          <input type="text" id="username" required name="username" />
+        </div>
+
+        <div>
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            required
+            minlength="8"
+            maxlength="20"
+            name="password"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="mrklins@mymomsbeendoxed.com"
+            name="email"
+          />
+        </div>
+
+        <div>
+          <label for="phone"
+            >Phone number (uses regular expression REGEX for pattern)</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            placeholder="814-746-2817"
+            pattern="{0-9}{3}-{0-9}{3}-{0-9}{3}"
+            name="phone"
+          />
+        </div>
+        <div>
+          <label for="height">Height in inches: </label>
+          <input type="number" id="height" min="0" max="99" value="48" />
+        </div>
+        <div>
+          <p>(Radio Button!) Do you regret coming to work today?</p>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="regret" value="yes" checked />
+          <label for="no">No</label>
+          <input type="radio" id="no" name="regret" value="no" />
+          <label for="maybe">Maybe</label>
+          <input type="radio" id="maybe" name="regret" value="maybe" />
+        </div>
+        <div>
+          <p>Dropdowns</p>
+          <label for="favorite">Which is your favorite planet?</label>
+          <select name="planet" id="favorite">
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+          </select>
+        </div>
+        <div>
+          <p>Checkboxes</p>
+          <input type="checkbox" id="subscribe" name="sendmespan" />
+          <label for="subscribe">Subscribe</label>
+        </div>
+        <div>
+          <p>Text Areas - used for longer text input</p>
+          <label for="comment">Add comment</label>
+          <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="Upload">Upload File</label>
+            <input type="file" id="Upload" name="fileupload" accept="image/png, image/jpeg, document/pdf",>
+        </div>
+        <div>
+            <p>In the form, use enctype for large files. It breaks the large files into smaller parts for upload</p>
+            <label for="UploadLarge" enctype="multipart/form-data">Upload Large File </label>
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+:root {
+  --footer-height: 50px;
+}
+
+h2 {
+  text-align: center;
+  text-shadow: 6px 6px 12px black;
+}
+h3 {
+  text-align: center;
+  text-shadow: 6px 6px 12px black;
+}
+.title {
+  background-color: blue;
+  color: yellow;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.container {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: var(--footer-height);
+  flex-wrap: wrap;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+img {
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid black;
+}
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.link-container {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0px;
+  height: var(--footer-height);
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: bisque;
+  margin: 0 8px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item p {
+  margin-bottom: 0.5em;
+}

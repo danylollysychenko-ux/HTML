@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Semantic Container Elements</title>
+    <!--The following shows EMBEDDED (or internal) Styles-->
+    <style>
+      /*target all h1s that are in a header*/
+      body {
+        margin: 0;
+      }
+      header h1 {
+        text-align: center;
+        margin: 0;
+        color: rgb(234, 0, 255);
+      }
+      /*The hashtag indicates it is an ID*/
+      #paragraph-id {
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px black;
+      }
+      /*To target element with a class use*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Semantic Container Elements</h1>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://www.w3schools.com/tags/tag_header.asp"
+              target="_blank"
+              >Header</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/tags/tag_main.asp"
+              target="_blank"
+              >Main</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/tags/tag_aside.asp"
+              target="_blank"
+              >Aside</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/tags/tag_footer.asp"
+              target="_blank"
+              >Footer</a
+            >
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank"
+              >Nav</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <aside>
+        <p>
+          <strong class="demohexcolor">Semantic HTML</strong> refers to the practice of using HTML
+          tags that clearly describe the <strong>meaning and purpose</strong> of
+          the content they contain, rather than just its visual appearance.
+        </p>
+      </aside>
+      <main>
+        <p>
+          The following elements are containers just like divs, but they serve a
+          <strong>semantic</strong> purpose.
+        </p>
+        <ul>
+          <li class="exciting">header</li>
+          <li>main</li>
+          <li class="exciting">aside</li>
+          <li>footer</li>
+          <li>nav</li>
+        </ul>
+        <p>
+          <span class="exciting blue">Without styling</span>, these will all look and behave the same. But to
+          screen readers and web crawlers they mean different things and tell
+          the technology a bit about page the page structure.
+        </p>
+        <p><a href="./anotherpage.html">Click here</a></p>
+        <p id="paragraph-id">
+          Elements can have IDs must be unique on the page (there can be only
+          one).
+        </p>
+      </main>
+    </div>
+    <footer>
+      <p>ECTS CMP</p>
+      <p>Year 1 2026</p>
+      <!--The following has an INLINE style-->
+      <p style="font-weight: bold">Mr. Klins Computer Programming</p>
+    </footer>
+  </body>
+</html>

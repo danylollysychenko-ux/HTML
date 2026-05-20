@@ -1,0 +1,58 @@
+header {
+  background-color: bisque;
+  margin: 0;
+}
+
+main {
+  border: 1px solid black;
+  /* padding: 0px 20px 5px 10px; /*T, R< B, L -OR- T/B, L/R*/
+  padding: 0px 20px;
+  background-color: salmon;
+}
+aside {
+  background-color: lightgrey;
+  width: 30%;
+  padding: 5px;
+}
+.container {
+  display: flex;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: lightblue;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+  padding-right: 0px 20px;
+  list-style-type: none;
+}
+/*
+In CSS, em is a relative unit of measurement that historically
+ refers to the width of a capital "M" in a given typeface. 
+ In modern digital typography and CSS, however, it is specifically 
+ defined by the font size of the element or its parent.
+ */
+/*
+ targeting all elements with class of exciting.
+ Using the . 
+ */
+
+span.blue { 
+  /*Notice specificity (0, 1, 1)*/
+  color: rgba(0, 0, 255, 0.25); /*The a is alpha for opacity 0 = invisible*/
+}
+
+.exciting {
+  color: red;
+  font-size: 1.25em; /* 1.25 the size of the current font*/
+}
+
+.demohexcolor{
+    color: #ff8800;
+}

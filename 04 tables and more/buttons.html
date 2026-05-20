@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons</title>
+        <style>
+            /*Specifically targets the element with the id of bootun*/
+            /* note: IDs should be unique - that means the id should appear only once on the page*/
+            #bootun{
+                display: block;
+                width: 100%;
+                height: 3em;
+                border-radius: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This page about buttons</h1>
+        <button onclick="addOne()" id="bootun">Click me please!</button>
+        <button onclick="reset()" id="reset">Reset</button>
+
+        <a href="./"><button>Click me please to go back to the home page!</button></a>
+        <script>
+            let count = 0;
+            function addOne(){
+                count += 1;
+                document.getElementById("bootun").innerHTML = count;
+            }
+            function reset(){
+                count = 0;
+                document.getElementById("bootun").innerHTML = count;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where booking happens</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="form.css">
+  </head>
+  <body>
+    <h1>Book tickets</h1>
+    <table>
+      <thead>
+        <!--Place names-->
+        <tr>
+          <th>Place</th>
+          <th>Angkor Temple</th>
+          <th>Colosseum</th>
+          <th>Paris</th>
+          <th>Ma'an</th>
+          <th>Machu Picchu></th>
+          <th>Sydney Opera House</th>
+          <th>Sagrada Familia Church</th>
+          <th>Statue of Liberty</th>
+          <th>Taj Mahal</th>
+          <th>Great Wall of China</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Price</td>
+          <td>$1,050</td>
+          <td>$650</td>
+          <td>$560</td>
+          <td>$680</td>
+          <td>$1,030</td>
+          <td>$1,470</td>
+          <td>$770</td>
+          <td>$530</td>
+          <td>$670</td>
+          <td>$800</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Register</p>
+    <form
+      action="https://eugene.kaspersky.com/top-100-must-see-places-in-the-world/"
+      method="GET"
+    >
+      <div class="data-from-user">
+        <div class="email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="joesmoe123@gmail.com"
+            name="email"
+          />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            required
+            minlength="8"
+            maxlength="28"
+            name="password"
+          />
+        </div>
+        <div class="phone">
+          <label for="phone">Phone #</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="123-456-7890"
+            pattern="{0-9}{3}-{0-9}{3}-{0-9}{4}"
+            name="phone"
+          />
+        </div>
+        <div class="place-selection">
+          <label for="select">Select the place you want to visit:</label>
+          <select name="place" id="select">
+            <option value="Angkor Temple">Angkor Temple</option>
+            <option value="Colosseum">Colosseum</option>
+            <option value="Paris">Paris</option>
+            <option value="Ma'an">Ma'an</option>
+            <option value="Machu Picchu">Machu Picchu</option>
+            <option value="Sydney Opera House">Sydney Opera House</option>
+            <option value="Sagrada Familia Church">
+              Sagrada Familia Church
+            </option>
+            <option value="Statue of Liberty">Statue of Liberty</option>
+            <option value="Taj Mahal">Taj Mahal</option>
+            <option value="Great Wall of China">Great Wall of China</option>
+          </select>
+        </div>
+        <div class="date">
+          <label for="date">Date of Travel</label>
+          <input type="date" id="date" />
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </div>
+    </form>
+    <div class="link-container">
+      <a style="color: white; text-decoration: none" href="./index.html"
+        >Home</a
+      >
+      <a style="color: white; text-decoration: none" href="./secondpage.html"
+        >Info</a
+      >
+    </div>
+  </body>
+</html>

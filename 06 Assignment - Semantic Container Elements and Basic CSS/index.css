@@ -1,0 +1,20 @@
+body {
+  background-color: bisque;
+  background-image: url("./images/rocks.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+h1,
+h2 {
+  text-align: center;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
