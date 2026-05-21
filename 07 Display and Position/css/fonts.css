@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&display=swap");
+@font-face {
+  font-family: "Marck Script";
+  src: url("../fonts/MarckScript-Regular.ttf");
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive;
+}
+
+.mono {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*
+The first font listed is preferred, 
+the second is less-specific but a fall back,
+and the third is basic
+*/
+p {
+  font-family: "Times New Roman", Times, serif;
+  /*default sizes*/
+  font-size: 16px; /*default size for most browsers*/
+  font-size: 18px; /*default size for most browsers*/
+  font-size: 12px; /*slightly smaller*/
+  font-size: 1em; /*Equal to 100% of the default size*/
+  font-size: 1.5em; /*equal to 150% of the default size*/
+  font-size: o.5em; /*50% of the default size*/
+
+  /*
+  px is a fixed size
+  em is relative to the parent font size
+  */
+}
+
+p.font-styling {
+  font-weight: bold; /*could be normal, bold, lighter, or a number 100 to 900*/
+  font-style: italic;
+}
+
+.vkuhl {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+
+.marc {
+  font-family: "Marck Script";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2em;
+}
